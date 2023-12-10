@@ -20,7 +20,6 @@ serie2.dar_likes()
 filmes_e_series = [filme1, filme2, serie1, serie2]
 
 for programa in filmes_e_series:
-    detalhe = (f'Duração: {programa.duracao}') if hasattr(programa,'duracao') else (f'Temporadas: {programa.temporadas}')
-    print(f'Programa: {programa.nome} - Ano: {programa.ano} - {detalhe} - Likes:  {programa.likes}')
+    programa.imprime()
 
 
