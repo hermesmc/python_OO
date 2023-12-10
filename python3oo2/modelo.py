@@ -29,4 +29,12 @@ class Serie(Programa):
         super().__init__(nome, ano)
         self.temporadas = temporadas
 
+'''
+Forma de acessar informações que não saõ comuns entre os objetos do tipo programa:
 
+filmes_e_series = [filme1, filme2, serie1, serie2]
+
+for programa in filmes_e_series:
+    detalhe = programa.duracao if hasattr(programa,'duracao') else programa.temporada
+    print(f'Programa: {programa.nome} - {detalhe} - {programa.likes}')
+'''
