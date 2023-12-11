@@ -20,6 +20,6 @@ serie2.dar_likes()
 filmes_e_series = [filme1, filme2, serie1, serie2]
 
 for programa in filmes_e_series:
-    programa.imprime()
+    print(programa)
 
 
