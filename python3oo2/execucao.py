@@ -26,13 +26,20 @@ serie1.dar_likes()
 serie2.dar_likes()
 serie2.dar_likes()
 
-filmes_e_series = [filme1, filme2, filme3, serie1, serie2]
+filmes_e_series = [filme1, filme2, serie1, serie2]
 
 fim_de_semana = Playlist("Fim de semana", filmes_e_series)
 
-print(f'Tamanho da playlist: {len(fim_de_semana)}')
+# Verificando se um item está na playlist
+print(filme3 in fim_de_semana)
 
+# Mostrando o primeiro item da playlist
+print(fim_de_semana[0])
+
+print("----------------------------------------------")
+
+# Mostrando a playlist
 for programa in fim_de_semana:
     print(programa)
 
-print(f'Tá ou não na playlist? {serie1 in fim_de_semana}')
+
