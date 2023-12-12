@@ -38,6 +38,11 @@ class Serie(Programa):
     def __str__(self):
         return f'Programa: {self.nome} - Ano: {self.ano} - Temporadas:  {self.temporadas} - Likes:  {self.likes}'
 
+class Playlist(list):
+    def __init__(self, nome, programas):
+        super().__init__(programas)
+        self.nome = nome
+
 '''
 Forma de acessar informações que não saõ comuns entre os objetos do tipo programa:
 
